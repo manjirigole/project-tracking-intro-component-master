@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.bg {
+  background-color: hsl(207, 33%, 95%);
+  height: 50vh;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  z-index: -1;
+  border-bottom-left-radius: 7rem;
+}
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  float: right;
+}
+.feature {
+  color: hsl(230, 11%, 40%);
+}
+.login {
+  color: hsl(231, 7%, 65%);
+  padding-left: 3rem;
+}
+.nav li {
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.nav li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.grid-left {
+  padding-left: 3rem;
+}
+.highlight-div {
+  display: flex;
+  gap: 1rem;
+  font-size: 18px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.new {
+  background-color: hsl(230, 29%, 20%);
+  border-radius: 20px;
+  padding: 0.3rem;
+  letter-spacing: normal;
+  color: hsl(207, 33%, 95%);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 50px;
+  text-align: center;
+}
+.highlight-p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(230, 11%, 40%);
+  font-family: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.grid-right {
+  overflow: hidden;
+}
+.heading {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 60px;
+  color: hsl(230, 29%, 20%);
+}
+.content {
+  font-size: 18px;
+  color: hsl(230, 11%, 40%);
+  font-family: "Barlow", sans-serif;
+}
+.btn-div {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.btn {
+  background-color: hsl(0, 100%, 68%);
+  padding: 1rem;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  color: hsl(207, 33%, 95%);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 80%;
+}
+.link {
+  text-decoration: none;
+  color: hsl(230, 11%, 40%);
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.mobile-nav {
+  display: none;
+}
+.hamburger-toggle {
+  display: none;
+}
+@media (max-width: 500px) {
+  .nav-div {
+    margin: 2rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .nav ul {
+    display: none;
+  }
+  .bg {
+    background-color: hsl(207, 33%, 95%);
+    height: 55vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    z-index: -1;
+    border-bottom-left-radius: 5rem;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    position: relative;
+  }
+  .grid-right {
+    align-items: flex-end;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  .illustration-devices {
+    width: 150%;
+    width: 500px;
+    max-width: none;
+    height: auto;
+    margin-left: 20%;
+  }
+  .container {
+    margin-bottom: 4rem;
+  }
+  .hamburger-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+  }
+  .icon-hamburger {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    width: 24px;
+    height: auto;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 5rem;
+    right: 20%;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 250px;
+    height: 250px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-nav ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+  .mobile-nav li {
+    display: block; /* Reset from flex */
+    width: 100%;
+    text-align: center;
+    padding: 0.4rem;
+    margin: 0.5rem 0;
+  }
+  .mobile-nav .login {
+    width: 200px;
+    border-top: 1px solid hsl(231, 7%, 65%);
+  }
+}
