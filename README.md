@@ -24,6 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
+![image](https://github.com/user-attachments/assets/08bd6e18-8135-4b5e-b1cf-c335bd8d8c91)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
